@@ -1,0 +1,67 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+.search-form {
+    background-color: #f8f9fa; /* Màu nền nhẹ nhàng */
+    border-radius: 8px; /* Đường viền mềm mại */
+    padding: 2rem; /* Thêm khoảng cách */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+  }
+  
+  .search-title {
+    font-size: 1.8rem; /* Kích thước chữ lớn hơn */
+    font-weight: bold; /* In đậm */
+    color: #343a40; /* Màu chữ tối */
+  }
+  
+  .search-input {
+    border-radius: 5px; /* Viền mềm mại */
+    border: 1px solid #ced4da; /* Viền sáng */
+    transition: border-color 0.3s; /* Hiệu ứng chuyển tiếp */
+  }
+  
+  .search-input:focus {
+    border-color: #007bff; /* Màu viền khi tập trung */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Hiệu ứng bóng */
+  }
+  
+  .search-button {
+    background-color: #007bff; /* Màu nền nút */
+    color: #fff; /* Màu chữ nút */
+    border: none; /* Không viền */
+    border-radius: 5px; /* Viền mềm mại */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển tiếp */
+  }
+  
+  .search-button:hover {
+    background-color: #0056b3; /* Màu nền nút khi hover */
+  }
+  .pointer1 {
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pointer1:hover {
+    transform: scale(1.05); /* Tăng nhẹ kích thước */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Thêm bóng để nổi bật */
+}
+.theem {
+  border-radius: 8px; /* Độ bo góc */
+  padding: 30%;
+  
+}
+.text-job{
+  font-family: 'Montserrat', sans-serif; /* Sử dụng font chữ Montserrat */
+  color: #fff;
+  font-weight: 900;
+}
+.btn-job{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 10px;
+    margin-top: 20px;
+    width: 300px;
+   
+    
+}

@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+.bg-minimal {
+
+    background-image: url('C:\Users\User\recruitment_web\frontend\public\image\cv2.jpg'); /* Đường dẫn đến hình ảnh */
+    background-size: cover; /* Để hình ảnh vừa khít */
+    background-position: center; /* Căn chỉnh hình ảnh vào giữa */
+    height: 180px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    transition: background-image 0.3s ease; /* Hiệu ứng chuyển đổi nếu bạn thay đổi hình ảnh */
+  }
+  
+
+
+.text-red {
+  color: #000000 !important;
+  text-transform: uppercase; /* Chuyển tất cả chữ thành chữ hoa */
+  font-weight: bold; /* In đậm chữ */
+}
+.icon1{
+  color: #000;
+  font-size: larger;
+}
+
+
+.mb-10 {
+  margin-bottom: 65px;
+}
+.text-center{
+  margin-top: 9px;
+}
+
+.cv-text-main1 {
+ color: #ffffff;
+text-align: center;
+background-color: transparent; /* Đặt nền trong suốt */
+font-weight: 900; /* Đặt mức in đậm nhất */
+font-family: 'Roboto';
+line-height: 1.5;
+margin-left: 38%;
+margin-top:-9px;
+
+}
+.cv-bg-main1{
+  background-color: rgb(194, 156, 100);
+}
+
+.rounded-nopill{
+  border-radius: 100%;
+}

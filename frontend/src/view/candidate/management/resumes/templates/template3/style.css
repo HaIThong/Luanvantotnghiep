@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+.bg {
+  clip-path: polygon(100% 0, 100% 59%, 13% 75%, 0 100%, 0 0);
+  background-image: url('C:\Users\User\recruitment_web\frontend\public\image\cv3.png'); /* Đường dẫn đến hình ảnh */
+  background-size: cover; /* Để hình ảnh vừa khít */
+  background-position: center; /* Căn chỉnh hình ảnh vào giữa */
+  height: 550px;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.bg-2 {
+  position: absolute;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+  background-image: url('C:\Users\User\recruitment_web\frontend\public\image\cv3 (1).png'); /* Đường dẫn đến hình ảnh */
+  background-size: cover; /* Để hình ảnh vừa khít */
+  background-position: center; /* Căn chỉnh hình ảnh vào giữa */
+  height: 150px;
+  width: 100%;
+  z-index: -1;
+  padding: 100px;
+}
+
+.text-blue {
+  color: #012a4a !important;
+  
+}
+
+.bg-tr{
+  background-color: transparent;
+  color: #ffffff
+
+}
+
+.bg-black1 {
+ 
+  background-color: #f6eded !important; /* Màu nền đen với độ ưu tiên cao */
+}
+.cv-text-cv2{
+  font-family: 'Roboto';
+}
+.bg-tr2{
+  background-color: transparent;
+  color: #070707;
+  font-size: larger;
+  font-weight: 900;
+
+  
+
+}

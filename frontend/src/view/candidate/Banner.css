@@ -1,0 +1,32 @@
+.banner {
+    background-image: url('C:/Users/User/recruitment_web/frontend/public/image/Findyourdreamjob.jpg'); /* Đảm bảo đường dẫn chính xác */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+   
+    padding: 12rem; /* p-5 */
+  }
+  
+  .banner-button {
+    color: #0066cc;
+    background-color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 10px; /* mt-2 */
+    padding: 0.5rem 1rem; /* px-4 py-2 */
+    border-radius: 30px;
+    position: absolute; /* Thay đổi position thành absolute */
+    left: 20px; /* Đặt khoảng cách từ bên trái */
+    bottom: 20px; /* Đặt khoảng cách từ dưới lên */
+  }
+  

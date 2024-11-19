@@ -1,0 +1,153 @@
+/* General Style */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" );
+.cv-text-main2{
+  color: #000000;
+  background-color: transparent;
+  font-weight: bolder; /* Đặt mức in đậm nhất */
+  font-family: 'Cormorant Garamond', serif;
+  line-height: 1.9;
+  margin-left: 20px;
+  
+}
+.bg-head1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('C:\Users\User\recruitment_web\frontend\public\image\cvt1.png'); /* Đường dẫn đến hình ảnh */
+  background-size: cover; /* Để hình ảnh vừa khít */
+  background-position: center; /* Căn chỉnh hình ảnh vào giữa */
+}
+.header1{
+  background-color: rgb(225, 233, 212);
+}
+.cv-container {
+  width: 850px;
+  margin: auto;
+  border-radius: 15px;
+  border: 2px solid #e5e5e5;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.cv-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-bottom: 2px solid #007bff;
+  background-color: #f7f7f7;
+  border-radius: 15px 15px 0 0;
+}
+
+.avatar-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 3px solid #007bff;
+}
+
+.cv-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #007bff;
+  border-bottom: 1px solid #007bff;
+  margin-bottom: 10px;
+}
+
+.cv-content {
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 0 0 15px 15px;
+}
+
+.cv-section {
+  margin-bottom: 20px;
+}
+
+.cv-subsection {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px 12px;
+  margin: 5px 0;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+}
+
+.button-group {
+  text-align: right;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+hr {
+  margin: 20px 0;
+  border-top: 2px solid #007bff;
+}
+
+@media (max-width: 768px) {
+  .cv-container {
+    width: 100%;
+  }
+}
+.title{
+  margin-top: auto;
+   color: #000000 !important;
+  text-transform: uppercase; /* Chuyển tất cả chữ thành chữ hoa */
+  font-weight: bold; /* In đậm chữ */
+  font-size: larger;
+}
+
+.background-trongsuot{
+  background-color: transparent !important;
+}
+.bg-tr1 {
+  background-color: transparent;
+  color: #000000;
+  font-size: medium;
+  margin-bottom: -7px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic; /* Thêm dòng này để làm in nghiêng chữ */
+}
+
+.mtt{
+  margin-top: 3px;
+}
+.bg-tr2{
+  margin-bottom: 2px !important;
+  
+}
