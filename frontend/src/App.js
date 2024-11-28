@@ -19,6 +19,9 @@ import Profile from "./view/candidate/management/profile";
 import Resume from "./view/candidate/management/resumes";
 import Template from "./view/candidate/management/resumes/templates";
 import NewLayout from "./view/NewLayout";
+import Dashboard from "./view/candidate/management/Dashboard/Dashboard";
+import Blog from "./view/candidate/management/Blog/Blog";
+import EmployerRegister from "./view/employer/auth/Signup";
 
 export const AppContext = createContext();
 
@@ -45,6 +48,8 @@ function App() {
                   <Route path="resumes" element={<Resume />} />
                   <Route path="resumes/create" element={<Template />} />
                   <Route path="resumes/:id" element={<Template />} />
+                  <Route path="dashboard" element={<Dashboard />} />
+                  <Route path="blog" element={<Blog />} />
                 </Routes>
               </CandidateLayout>
             }
@@ -63,6 +68,7 @@ function App() {
             }
           />
           <Route path="employer/login" element={<EmployerLogin />} />
+          <Route path="employer/signup" element={<EmployerRegister />} />
           {/* Các route khác bên trong Layout */}
           <Route
             path="*"

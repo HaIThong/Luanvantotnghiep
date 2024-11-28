@@ -1222,6 +1222,182 @@ class JobSeeder extends Seeder
                 'created_at' => '2023-10-19 09:00:00'
 
             ],
+            [
+                'id' => 27,
+                'employer_id' => 21, // Điện Máy Xanh's employer_id
+                'jtype_id' => 1, // Assuming it's for Part-time
+                'jlevel_id' => 2, // Entry-level position
+                'jname' => 'Nhân viên Bán Hàng',
+                'address' => '12 Nguyễn Văn Linh, Quận Ninh Kiều, Thành phố Cần Thơ',
+                'amount' => 10,
+                'min_salary' => 5000, // Lương theo ngày (5000 VND/giờ hoặc ngày tuỳ yêu cầu)
+                'max_salary' => 7000,
+                'yoe' => 0, // Không yêu cầu kinh nghiệm
+                'gender' => null,
+                'description' => htmlspecialchars('
+                MÔ TẢ CÔNG VIỆC
+                - Tư vấn, giới thiệu sản phẩm điện máy đến khách hàng tại cửa hàng.
+                - Hỗ trợ khách hàng chọn sản phẩm phù hợp với nhu cầu.
+                - Duy trì vệ sinh quầy kệ, đảm bảo trưng bày sản phẩm gọn gàng.
+                - Hỗ trợ các công việc khác theo sự phân công của quản lý.
+            
+                YÊU CẦU CÔNG VIỆC
+                - Không yêu cầu kinh nghiệm, sẽ được đào tạo.
+                - Thân thiện, giao tiếp tốt, yêu thích công việc tư vấn bán hàng.
+                - Có tinh thần trách nhiệm và khả năng làm việc nhóm.
+            
+                ƯU TIÊN:
+                - Ứng viên có kinh nghiệm bán hàng hoặc tư vấn khách hàng.
+                - Sẵn sàng làm việc vào cuối tuần hoặc ngày lễ.
+                '),
+                'expire_at' => '2025-11-23',
+                'is_hot' => 1,
+                'is_active' => 1,
+                'created_at' => '2023-11-23 09:00:00'
+            ],
+            [
+                'id' => 28,
+                'employer_id' => 22, // CUSC's employer_id
+                'jtype_id' => 1, // Assuming it's for Full-time
+                'jlevel_id' => 2, // Mid-level position
+                'jname' => 'Lập Trình Viên Fullstack',
+                'address' => 'Khu II, Đại học Cần Thơ, đường 3/2, Ninh Kiều, TP. Cần Thơ',
+                'amount' => 5,
+                'min_salary' => 1200, // Lương theo tháng (1200 USD)
+                'max_salary' => 2000,
+                'yoe' => 2, // Yêu cầu ít nhất 2 năm kinh nghiệm
+                'gender' => null,
+                'description' => htmlspecialchars('
+                MÔ TẢ CÔNG VIỆC
+                - Phát triển và triển khai các dự án phần mềm của trung tâm.
+                - Làm việc với nhóm phát triển để xây dựng hệ thống web và phần mềm doanh nghiệp.
+                - Thực hiện kiểm thử và tối ưu hiệu suất ứng dụng.
+                - Báo cáo tiến độ công việc cho quản lý dự án.
+                
+                YÊU CẦU CÔNG VIỆC
+                - Ít nhất 2 năm kinh nghiệm lập trình Fullstack.
+                - Thành thạo JavaScript (ReactJS/VueJS) và PHP (Laravel).
+                - Hiểu biết về cơ sở dữ liệu (MySQL, PostgreSQL).
+                - Có kinh nghiệm làm việc với Docker và các hệ thống CI/CD là lợi thế.
+                - Kỹ năng giải quyết vấn đề, tư duy logic, và làm việc nhóm tốt.
+            
+                ƯU TIÊN:
+                - Có kinh nghiệm làm việc trong môi trường Agile.
+                - Ứng viên có khả năng giao tiếp tiếng Anh tốt là một lợi thế.
+                '),
+                'expire_at' => '2025-11-23',
+                'is_hot' => 1,
+                'is_active' => 1,
+                'created_at' => '2023-11-23 09:00:00'
+            ],
+            [
+                'id' => 29,
+                'employer_id' => 23, // Trường Đại học Cần Thơ's employer_id
+                'jtype_id' => 1, // Full-time
+                'jlevel_id' => 2, // Senior-level position
+                'jname' => 'Giảng viên Công Nghệ Thông Tin',
+                'address' => 'Khu II, Đường 3/2, Ninh Kiều, TP. Cần Thơ',
+                'amount' => 2,
+                'min_salary' => 1500, // 1500 USD
+                'max_salary' => 2500,
+                'yoe' => 5, // Yêu cầu ít nhất 5 năm kinh nghiệm
+                'gender' => null,
+                'description' => htmlspecialchars('
+                MÔ TẢ CÔNG VIỆC
+                - Giảng dạy các môn học thuộc lĩnh vực Công Nghệ Thông Tin.
+                - Tham gia nghiên cứu khoa học và các dự án công nghệ của trường.
+                - Hướng dẫn sinh viên trong các dự án thực tập và khóa luận tốt nghiệp.
+                - Xây dựng và cải tiến chương trình giảng dạy, giáo trình.
+                
+                YÊU CẦU CÔNG VIỆC
+                - Tốt nghiệp thạc sĩ trở lên ngành Công Nghệ Thông Tin hoặc các ngành liên quan.
+                - Ít nhất 5 năm kinh nghiệm giảng dạy hoặc làm việc thực tế trong lĩnh vực CNTT.
+                - Có kinh nghiệm nghiên cứu khoa học, xuất bản các bài báo hoặc tham gia các dự án CNTT.
+                - Kỹ năng giao tiếp tốt, có khả năng sử dụng tiếng Anh trong công việc và giảng dạy.
+            
+                ƯU TIÊN:
+                - Ứng viên có bằng tiến sĩ hoặc có kinh nghiệm giảng dạy tại các trường đại học.
+                - Có kinh nghiệm làm việc với các công nghệ như AI, Big Data, hoặc Cloud Computing.
+                '),
+                'expire_at' => '2025-11-30',
+                'is_hot' => 1,
+                'is_active' => 1,
+                'created_at' => '2023-11-23 09:00:00'
+            ],
+            [
+                'id' => 30,
+                'employer_id' => 24, // DTSoft's employer_id
+                'jtype_id' => 2, // Full-time
+                'jlevel_id' => 2, // Mid-level position
+                'jname' => 'Lập Trình Viên Phần Mềm',
+                'address' => '84/28, hẻm 86, Cách Mạng Tháng Tám, Phường Cái Khế, Quận Ninh Kiều, TP. Cần Thơ',
+                'amount' => 3,
+                'min_salary' => 1000, // Lương theo tháng (1000 USD)
+                'max_salary' => 1500,
+                'yoe' => 2, // Yêu cầu ít nhất 2 năm kinh nghiệm
+                'gender' => null,
+                'description' => htmlspecialchars('
+                MÔ TẢ CÔNG VIỆC
+                - Phát triển các ứng dụng phần mềm kế toán và quản lý khách hàng của công ty.
+                - Tìm hiểu yêu cầu và đưa ra các giải pháp công nghệ đáp ứng nhu cầu của khách hàng.
+                - Kiểm thử và tối ưu hiệu suất phần mềm.
+                - Báo cáo tiến độ công việc và hỗ trợ nhóm dự án.
+            
+                YÊU CẦU CÔNG VIỆC
+                - Ít nhất 2 năm kinh nghiệm lập trình với .NET Framework hoặc ngôn ngữ tương đương.
+                - Thành thạo cơ sở dữ liệu SQL Server.
+                - Có khả năng tư duy logic và giải quyết vấn đề tốt.
+                - Kỹ năng làm việc nhóm và giao tiếp hiệu quả.
+            
+                ƯU TIÊN:
+                - Có kinh nghiệm phát triển phần mềm kế toán hoặc phần mềm quản lý doanh nghiệp.
+                - Có chứng chỉ hoặc khóa đào tạo liên quan đến .NET hoặc SQL Server.
+                '),
+                'expire_at' => '2025-11-30',
+                'is_hot' => 1,
+                'is_active' => 1,
+                'created_at' => '2023-11-23 09:00:00'
+            ],
+            [
+                'id' => 31,
+                'employer_id' => 25, // Bệnh viện Phương Châu's employer_id
+                'jtype_id' => 1, // Full-time
+                'jlevel_id' => 2, // Entry-level position
+                'jname' => 'Điều Dưỡng Viên',
+                'address' => '300 Nguyễn Văn Cừ, Phường An Bình, Quận Ninh Kiều, TP. Cần Thơ',
+                'amount' => 10,
+                'min_salary' => 800, // Lương theo tháng (800 USD)
+                'max_salary' => 1200,
+                'yoe' => 1, // Yêu cầu ít nhất 1 năm kinh nghiệm
+                'gender' => null,
+                'description' => htmlspecialchars('
+                MÔ TẢ CÔNG VIỆC
+                - Chăm sóc sức khỏe bệnh nhân, hỗ trợ bác sĩ trong quá trình điều trị.
+                - Theo dõi tình trạng sức khỏe và hỗ trợ bệnh nhân hồi phục.
+                - Thực hiện các công việc điều dưỡng theo sự phân công của quản lý.
+                - Tham gia các chương trình đào tạo và nâng cao chuyên môn tại bệnh viện.
+                
+                YÊU CẦU CÔNG VIỆC
+                - Tốt nghiệp Cao đẳng hoặc Đại học ngành Điều dưỡng.
+                - Ít nhất 1 năm kinh nghiệm làm điều dưỡng tại các bệnh viện hoặc phòng khám.
+                - Kỹ năng giao tiếp tốt, tận tâm và chu đáo trong công việc.
+                - Có khả năng làm việc theo ca và chịu được áp lực công việc.
+            
+                ƯU TIÊN:
+                - Ứng viên có chứng chỉ chuyên khoa hoặc kinh nghiệm trong lĩnh vực điều dưỡng chuyên biệt.
+                - Có khả năng giao tiếp bằng tiếng Anh là lợi thế.
+                '),
+                'expire_at' => '2025-12-31',
+                'is_hot' => 1,
+                'is_active' => 1,
+                'created_at' => '2023-11-23 09:00:00'
+            ],
+            
+            
+            
+            
+            
+            
 
         ]);
     }

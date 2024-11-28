@@ -1,0 +1,72 @@
+/* Container chính */
+.blog-detail-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Nút quay lại */
+  .btn-back {
+    display: inline-block;
+    margin-bottom: 20px;
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-back:hover {
+    background-color: #5a6268;
+  }
+  
+  /* Card chi tiết blog */
+  .blog-detail-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+  }
+  
+  /* Tiêu đề */
+  .blog-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Hình ảnh */
+  .blog-detail-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Nội dung */
+  .blog-content {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+  }
+  
+  /* Danh sách trong nội dung */
+  .blog-content ul, .blog-content ol {
+    padding-left: 20px;
+    margin: 10px 0;
+  }
+  
+  .blog-content ul li, .blog-content ol li {
+    margin-bottom: 8px;
+  }
+  

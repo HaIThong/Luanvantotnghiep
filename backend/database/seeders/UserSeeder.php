@@ -35,6 +35,12 @@ class UserSeeder extends Seeder
             ['id' => 16, 'email' => 'company10@gmail.com', 'password' => Hash::make('company10@12345'), 'role' => 2, 'is_active' => 1],
             ['id' => 20, 'email' => 'company11@gmail.com', 'password' => Hash::make('company11@12345'), 'role' => 2, 'is_active' => 1],
             ['id' => 17, 'email' => 'quang@gmail.com', 'password' => Hash::make('quang123A'), 'role' => 1, 'is_active' => 1],
+            ['id' => 21, 'email' => 'company21@gmail.com', 'password' => Hash::make('company21@12345'), 'role' => 2, 'is_active' => 1],
+            ['id' => 22, 'email' => 'company22@gmail.com', 'password' => Hash::make('company22@12345'), 'role' => 2, 'is_active' => 1],
+            ['id' => 23, 'email' => 'company23@gmail.com', 'password' => Hash::make('company23@12345'), 'role' => 2, 'is_active' => 1],
+            ['id' => 24, 'email' => 'company24@gmail.com', 'password' => Hash::make('company24@12345'), 'role' => 2, 'is_active' => 1],
+            ['id' => 25, 'email' => 'company25@gmail.com', 'password' => Hash::make('company25@12345'), 'role' => 2, 'is_active' => 1],
+            
         ]);
     }
 }

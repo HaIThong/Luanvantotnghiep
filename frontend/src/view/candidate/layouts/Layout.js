@@ -134,6 +134,7 @@ function Layout(props) {
             to="/home"
             onClick={() => setCurrentPage('/home')}
           >
+            
             <BsBriefcase className="me-2" />
             TRANG CHỦ
           </Link>
@@ -249,7 +250,7 @@ function Layout(props) {
                 </span>
                 <ul className="dropdown-menu">
                   <li>
-                    <Link className="dropdown-item" to="/candidate">
+                    <Link className="dropdown-item" to="/candidate/profile">
                       Tài khoản
                     </Link>
                   </li>

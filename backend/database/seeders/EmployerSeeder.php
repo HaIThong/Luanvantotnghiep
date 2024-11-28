@@ -226,6 +226,91 @@ class EmployerSeeder extends Seeder
                 'is_active' => 1
 
             ],
+            [
+                'id' => 21,
+                'user_id' => 21,
+                'name' => 'Điện Máy Xanh',
+                'address' => 'Văn phòng chính: 12 Nguyễn Văn Linh, Quận Ninh Kiều, Thành phố Cần Thơ',
+                'min_employees' => 200,
+                'max_employees' => 5000,
+                'contact_name' => 'Phòng Tuyển Dụng Điện Máy Xanh',
+                'phone' => '0355555555',
+                'website' => 'https://www.dienmayxanh.com/',
+                'description' => 'Điện Máy Xanh là chuỗi siêu thị điện máy hàng đầu Việt Nam, chuyên cung cấp các sản phẩm điện tử, điện lạnh, gia dụng và công nghệ. Chúng tôi luôn đặt khách hàng làm trọng tâm, đồng thời tạo môi trường làm việc chuyên nghiệp, năng động để phát triển đội ngũ nhân viên.',
+                'logo' => asset('images/dmx_logo.jpg'),
+                'image' => asset('images/dmx_banner.png'),
+                'is_hot' => 1,
+                'is_active' => 1
+            ],
+            [
+                'id' => 22,
+                'user_id' => 22,
+                'name' => 'Trung Tâm Công Nghệ Phần Mềm CUSC',
+                'address' => 'Khu II, Đại học Cần Thơ, đường 3/2, Ninh Kiều, TP. Cần Thơ',
+                'min_employees' => 100,
+                'max_employees' => 300,
+                'contact_name' => 'Phòng Tuyển Dụng CUSC',
+                'phone' => '02923838383',
+                'website' => 'https://cusc.ctu.edu.vn/cms',
+                'description' => 'Trung Tâm Công Nghệ Phần Mềm CUSC trực thuộc Đại học Cần Thơ, là nơi đào tạo và cung cấp nguồn nhân lực chất lượng cao trong lĩnh vực công nghệ thông tin. Chúng tôi chuyên phát triển các giải pháp phần mềm, nghiên cứu và ứng dụng công nghệ, đồng thời cung cấp các dịch vụ đào tạo chuyên sâu cho cá nhân và doanh nghiệp.',
+                'logo' => asset('images/cusc_logo.png'),
+                'image' => asset('images/cusc_banner.png'),
+                'is_hot' => 1,
+                'is_active' => 1
+            ],
+            [
+                'id' => 23,
+                'user_id' => 23,
+                'name' => 'Trường Đại học Cần Thơ',
+                'address' => 'Khu II, Đường 3/2, Ninh Kiều, TP. Cần Thơ',
+                'min_employees' => 1000,
+                'max_employees' => 3000,
+                'contact_name' => 'Phòng Nhân sự - Đại học Cần Thơ',
+                'phone' => '02923830811',
+                'website' => 'https://www.ctu.edu.vn/',
+                'description' => 'Trường Đại học Cần Thơ là một trong những trung tâm đào tạo, nghiên cứu khoa học, và chuyển giao công nghệ hàng đầu tại Đồng bằng sông Cửu Long. Với đội ngũ giảng viên giàu kinh nghiệm và cơ sở vật chất hiện đại, trường luôn tạo điều kiện tốt nhất cho cả giảng viên và sinh viên phát triển.',
+                'logo' => asset('images/ctu_logo.jpg'),
+                'image' => asset('images/ctu_banner.jpg'),
+                'is_hot' => 1,
+                'is_active' => 1
+            ],
+            [
+                'id' => 24,
+                'user_id' => 24,
+                'name' => 'Công ty Phần mềm DTSoft Cần Thơ',
+                'address' => '84/28, hẻm 86, Cách Mạng Tháng Tám, Phường Cái Khế, Quận Ninh Kiều, TP. Cần Thơ',
+                'min_employees' => 50,
+                'max_employees' => 200,
+                'contact_name' => 'Phòng Nhân sự - DTSoft Cần Thơ',
+                'phone' => '02923941789',
+                'website' => 'https://dtsoft.vn/',
+                'description' => 'DTSoft là công ty chuyên cung cấp phần mềm kế toán và quản lý cho hơn 16.000 khách hàng từ năm 1995 đến nay. Với phương châm lấy chất lượng sản phẩm và dịch vụ sau bán hàng làm nòng cốt, sự hài lòng của khách hàng là sứ mệnh mà DTSoft luôn nỗ lực phấn đấu.',
+                'logo' => asset('images/dtsoft_logo.jpg'),
+                'image' => asset('images/dtsoft_banner.png'),
+                'is_hot' => 1,
+                'is_active' => 1
+            ],
+            [
+                'id' => 25,
+                'user_id' => 25,
+                'name' => 'Bệnh viện Quốc tế Phương Châu',
+                'address' => '300 Nguyễn Văn Cừ, Phường An Bình, Quận Ninh Kiều, TP. Cần Thơ',
+                'min_employees' => 300,
+                'max_employees' => 1000,
+                'contact_name' => 'Phòng Nhân sự - Bệnh viện Phương Châu',
+                'phone' => '02923989999',
+                'website' => 'https://phuongchau.com/',
+                'description' => 'Bệnh viện Quốc tế Phương Châu là đơn vị y tế hàng đầu tại Đồng bằng sông Cửu Long với sứ mệnh chăm sóc sức khỏe toàn diện và chất lượng. Bệnh viện cung cấp các dịch vụ y tế hiện đại và đội ngũ chuyên gia giàu kinh nghiệm, không ngừng phấn đấu để mang lại sự hài lòng tối đa cho khách hàng.',
+                'logo' => asset('images/phuongchau_logo.jpg'),
+                'image' => asset('images/phuongchau_banner.jpg'),
+                'is_hot' => 1,
+                'is_active' => 1
+            ],
+            
+            
+            
+
+            
 
         ]);
     }

@@ -1,11 +1,19 @@
 @media screen and (min-width: 992px) {
     .menu-part {
         width: 20%;
-        height: 100vh;        
+        height: 100vh;    
+        color: #007bff;
+        font-size: 18px;
+        font-weight: bold;    
     }
     .content-part {
         width: 80%;
         height: 100vh;
         overflow-y: auto;
     }
+    .menu-icon {
+        font-size: 20px; /* Kích thước biểu tượng */
+        margin-right: 15px; /* Khoảng cách giữa biểu tượng và nội dung */
+        color: #007bff;
+      }
 }

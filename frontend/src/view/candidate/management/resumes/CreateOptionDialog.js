@@ -51,17 +51,17 @@ export const TemplateList = ({ selectedTemplate, onTemplateChange }) => {
     {
       id: 1,
       name: 'Elegant',
-      img: '/image/cv-template-elegant.png',
+      img: '/image/template1.png',
     },
     {
       id: 2,
       name: 'Minimal',
-      img: '/image/cv-template-minimal.png',
+      img: '/image/template2.png',
     },
     {
       id: 3,
       name: 'Modern',
-      img: '/image/cv-template-modern.png',
+      img: '/image/template3.png',
     },
   ];
 

@@ -1,4 +1,4 @@
-import { AiFillProfile, AiTwotoneAppstore } from "react-icons/ai";
+import {  AiTwotoneAppstore } from "react-icons/ai";
 import {
   BsFillBriefcaseFill,
   BsFillPeopleFill,
@@ -18,7 +18,7 @@ function Layout(props) {
   const { currentPage, setCurrentPage } = useContext(AppContext);
 
   const company = useSelector((state) => state.employerAuth.current.employer);
-  const isAuth = useSelector((state) => state.employerAuth.isAuth);
+ 
   const dispatch = useDispatch();
 
   const handleLogout = async () => {
@@ -103,6 +103,7 @@ function Layout(props) {
           >
             <BsFillPeopleFill className="fs-5 me-1" /> Ứng viên
           </div>
+          
         </div>
 
         <div className="content-part page-body">{props.children}</div>

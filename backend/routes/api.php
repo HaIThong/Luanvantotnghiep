@@ -45,6 +45,7 @@ Route::controller(AuthController::class)->group(function () {
     Route::get('logout', 'logout');
     Route::get('refresh', 'refresh');
     Route::get('getMe', 'me');
+    Route::get('register-employer', 'registerEmployer');
 });
 
 Route::controller(EmployerController::class)->prefix('companies')->group(function () {

@@ -16,6 +16,9 @@ import clsx from 'clsx';
 import { AppContext } from '../../../../App';
 import authApi from '../../../../api/auth';
 import { candAuthActions } from '../../../../redux/slices/candAuthSlice';
+import { AiFillHome, AiOutlineProfile, AiOutlineFileText, AiFillBook, AiOutlineSave } from 'react-icons/ai';
+import { FaBlog } from 'react-icons/fa';
+import { BsFillBriefcaseFill } from 'react-icons/bs';
 
 export const CandidateContext = createContext();
 
@@ -146,17 +149,26 @@ function CandidateLayout(props) {
           </div>
           <div className="d-flex align-items-center ps-lg-5 py-lg-2 px-2 pointer hover-bgt-light"
               onClick={() => handleChangePage('/home')}
-          >
+          ><AiFillHome className="menu-icon" />
              HOME
           </div>
           <div
             className={clsx(
               'd-flex align-items-center ps-lg-5 py-lg-2 px-2 pointer hover-bgt-light',
-              currentPage === '/candidate' && 'bg-mlight text-main',
+              currentPage === '/candidate/dashboard' && 'bg-mlight text-main',
             )}
-            onClick={() => handleChangePage('/candidate')}
-          >
-            Dashboard
+            onClick={() => handleChangePage('/candidate/dashboard')}
+          ><AiFillBook className="menu-icon" />
+            Kiến thức
+          </div>
+          <div
+            className={clsx(
+              'd-flex align-items-center ps-lg-5 py-lg-2 px-2 pointer hover-bgt-light',
+              currentPage === '/candidate/blog' && 'bg-mlight text-main',
+            )}
+            onClick={() => handleChangePage('/candidate/blog')}
+          > <FaBlog className="menu-icon" />
+            Blog
           </div>
           <div
             className={clsx(
@@ -164,7 +176,7 @@ function CandidateLayout(props) {
               currentPage === '/candidate/profile' && 'bg-mlight text-main',
             )}
             onClick={() => handleChangePage('/candidate/profile')}
-          >
+          ><AiOutlineProfile className="menu-icon" />
             Profile cá nhân
           </div>
           <div
@@ -173,7 +185,7 @@ function CandidateLayout(props) {
               currentPage === '/candidate/resumes' && 'bg-mlight text-main',
             )}
             onClick={() => handleChangePage('/candidate/resumes')}
-          >
+          ><AiOutlineFileText className="menu-icon" />
             Quản lý hồ sơ
           </div>
           
@@ -184,7 +196,7 @@ function CandidateLayout(props) {
                 'bg-mlight text-main',
             )}
             onClick={() => handleChangePage('/candidate/applied-jobs')}
-          >
+          > <BsFillBriefcaseFill className="menu-icon" />
             Việc làm đã nộp
           </div>
           <div
@@ -193,7 +205,7 @@ function CandidateLayout(props) {
               currentPage === '/candidate/saved-jobs' && 'bg-mlight text-main',
             )}
             onClick={() => handleChangePage('/candidate/saved-jobs')}
-          >
+          > <AiOutlineSave className="menu-icon" />
             Việc làm đã lưu
           </div>
         </div>

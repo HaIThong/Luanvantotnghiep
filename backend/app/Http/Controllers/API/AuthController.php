@@ -138,4 +138,35 @@ class AuthController extends Controller
             ]
         ]);
     }
+    public function registerEmployer(Request $request)
+{
+    $request->validate([
+        'email' => 'required|email|max:255|unique:users',
+        'password' => 'required|string|min:6',
+        'name' => 'required|string|max:255',
+        'address' => 'required|string',
+        'phone' => 'required|string',
+        'website' => 'nullable|string|max:255',
+    ]);
+
+    $user = User::create([
+        'email' => $request->email,
+        'password' => Hash::make($request->password),
+        'role' => 2, // Role nhà tuyển dụng
+        'is_active' => 1,
+    ]);
+
+    Employer::create([
+        'user_id' => $user->id,
+        'name' => $request->name,
+        'address' => $request->address,
+        'phone' => $request->phone,
+        'website' => $request->website,
+    ]);
+
+    return response()->json([
+        'message' => 'Nhà tuyển dụng được tạo thành công',
+    ], 201);
+}
+
 }

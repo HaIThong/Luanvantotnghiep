@@ -97,10 +97,10 @@ function JobList() {
   }, []);
 
   return (
-    <div className="bg-cl pb-5" style={{ width:"100%"}}>
+    <div className="bg-cl p-5" style={{ width:"100%"}}>
       <Form
         noValidate
-        className="p-4  shadow-sm "
+        className="pb-5  shadow-sm "
         onSubmit={handleSubmit(handleFilter)}
       >
         <h1 className="text-center text-job">

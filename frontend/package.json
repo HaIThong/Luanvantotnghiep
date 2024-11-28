@@ -73,5 +73,22 @@
     "laravel-echo": "^1.15.3",
     "pusher-js": "^8.4.0-rc2",
     "react-router-dom": "^6.11.1"
-  }
+  },
+
+    "results": [
+      {
+        "title": "Học JavaScript Cơ Bản",
+        "description": "Khóa học này giúp bạn làm quen với JavaScript.",
+        "image_url": "https://via.placeholder.com/300x200",
+        "link": "https://example.com/course/javascript"
+      },
+      {
+        "title": "Học Python cho Người Mới Bắt Đầu",
+        "description": "Khóa học này dạy Python từ cơ bản đến nâng cao.",
+        "image_url": "https://via.placeholder.com/300x200",
+        "link": "https://example.com/course/python"
+      }
+    ]
+  
+  
 }

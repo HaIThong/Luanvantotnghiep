@@ -1,0 +1,123 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+.container-profile {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.suggestions-title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color: #343a40;
+    margin-bottom: 2rem;
+    margin-top: 20px;
+}
+
+.job-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+    justify-content: space-around;
+    margin-top: 1rem;
+    padding: 2px;
+}
+
+.job-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.job-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.job-card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #007bff;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+}
+
+.job-card-title:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+.job-card-company {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 1rem;
+}
+
+.job-card-details {
+    font-size: 0.9rem;
+    color: #495057;
+}
+
+.job-card-details span {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 2px 8px;
+    background-color: #e9ecef;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    color: #343a40;
+}
+
+.job-card-button {
+    margin-top: 1rem;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.job-card-button:hover {
+    background-color: #0056b3;
+}
+
+.no-jobs-message {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #6c757d;
+    margin-top: 2rem;
+}
+/* page.css */
+.job-card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .job-card-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain; /* Giữ tỷ lệ logo */
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    background-color: #f9f9f9; /* Nền sáng cho logo */
+  }
+  

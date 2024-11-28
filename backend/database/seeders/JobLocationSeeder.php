@@ -41,7 +41,13 @@ class JobLocationSeeder extends Seeder
             ['job_id'=>23, 'location_id'=>29],
             ['job_id'=>24, 'location_id'=>29],
             ['job_id'=>25, 'location_id'=>29],
-            ['job_id'=>26, 'location_id'=>29],
+            ['job_id'=>26, 'location_id'=>14],
+            ['job_id'=>27, 'location_id'=>14],
+            ['job_id'=>28, 'location_id'=>14],
+            ['job_id'=>29, 'location_id'=>14],
+            ['job_id'=>30, 'location_id'=>14],
+            ['job_id'=>31, 'location_id'=>14],
+
         ]);
     }
 }

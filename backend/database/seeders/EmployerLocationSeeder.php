@@ -26,6 +26,12 @@ class EmployerLocationSeeder extends Seeder
             ['employer_id' => 15, 'location_id' => 24],
             ['employer_id' => 16, 'location_id' => 29],
             ['employer_id' => 20, 'location_id' => 29],
+            ['employer_id' => 21, 'location_id' => 14],
+            ['employer_id' => 22, 'location_id' => 14],
+            ['employer_id' => 23, 'location_id' => 14],
+            ['employer_id' => 24, 'location_id' => 14],
+            ['employer_id' => 25, 'location_id' => 14],
+            
         ]);
     }
 }

@@ -30,6 +30,7 @@ class IndustrySeeder extends Seeder
             ['id'=>14,'name'=>'Tiếp thị / Marketing'],
             ['id'=>15,'name'=>'Vận chuyển / Giao nhận / Kho vận'],
             ['id'=>16,'name'=>'Tư vấn'],
+            ['id'=>17,'name'=>'Điều dưỡng'],
             //['id'=>,'name'=>''],
             //['id'=>,'name'=>''],
         ]);

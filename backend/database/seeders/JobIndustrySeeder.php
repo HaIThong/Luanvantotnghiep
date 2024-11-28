@@ -67,9 +67,14 @@ class JobIndustrySeeder extends Seeder
             ['job_id'=>24, 'industry_id'=>11],
             ['job_id'=>24, 'industry_id'=>16],
             ['job_id'=>25, 'industry_id'=>14],
-            ['job_id'=>25, 'industry_id'=>2],
-            //['job_id'=>, 'industry_id'=>],
-            //['job_id'=>, 'industry_id'=>],
+            ['job_id'=>26, 'industry_id'=>2],
+            ['job_id'=>27, 'industry_id'=>11],
+            ['job_id'=>28, 'industry_id'=>2],
+            ['job_id'=>29, 'industry_id'=>9],
+            ['job_id'=>30, 'industry_id'=>2],
+            ['job_id'=>30, 'industry_id'=>17],
+
+           
         ]);
     }
 }
