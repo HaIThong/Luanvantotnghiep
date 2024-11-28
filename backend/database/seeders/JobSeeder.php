@@ -1034,8 +1034,8 @@ class JobSeeder extends Seeder
                 'jname' => 'Marketing Executive',
                 'address' => 'Số 2 Hồng Hà, Phường 2, Quận Tân Bình, Thành phố Hồ Chí Minh, Việt Nam',
                 'amount' => 3,
-                'min_salary' => null,
-                'max_salary' => null,
+                'min_salary' => 8,
+                'max_salary' => 10,
                 'yoe' => 8,
                 'gender' => null,
                 'description' => htmlspecialchars('
@@ -1089,8 +1089,8 @@ class JobSeeder extends Seeder
                 'jname' => 'Presale ERP Oracle NetSuite',
                 'address' => 'Số 2 Hồng Hà, Phường 2, Quận Tân Bình, Thành phố Hồ Chí Minh, Việt Nam',
                 'amount' => 1,
-                'min_salary' => null,
-                'max_salary' => null,
+                'min_salary' => 10,
+                'max_salary' => 20,
                 'yoe' => 5,
                 'gender' => null,
                 'description' => htmlspecialchars('
@@ -1160,8 +1160,8 @@ class JobSeeder extends Seeder
                 'jname' => 'Thực tập sinh Marketing',
                 'address' => 'Số 2 Hồng Hà, Phường 2, Quận Tân Bình, Thành phố Hồ Chí Minh, Việt Nam',
                 'amount' => 4,
-                'min_salary' => null,
-                'max_salary' => null,
+                'min_salary' => 5,
+                'max_salary' => 10,
                 'yoe' => 0,
                 'gender' => null,
                 'description' => htmlspecialchars('
@@ -1193,8 +1193,8 @@ class JobSeeder extends Seeder
                 'jname' => 'Fullstack Developer',
                 'address' => 'Tầng 5, Toà nhà Etown, 364 Cộng Hòa, Quận Tân Bình, Thành phố Hồ Chí Minh',
                 'amount' => 3,
-                'min_salary' => 2000,
-                'max_salary' => 3500,
+                'min_salary' => 8,
+                'max_salary' => 20,
                 'yoe' => 3,
                 'gender' => null,
                 'description' => htmlspecialchars('
@@ -1230,9 +1230,9 @@ class JobSeeder extends Seeder
                 'jname' => 'Nhân viên Bán Hàng',
                 'address' => '12 Nguyễn Văn Linh, Quận Ninh Kiều, Thành phố Cần Thơ',
                 'amount' => 10,
-                'min_salary' => 5000, // Lương theo ngày (5000 VND/giờ hoặc ngày tuỳ yêu cầu)
-                'max_salary' => 7000,
-                'yoe' => 0, // Không yêu cầu kinh nghiệm
+                'min_salary' => 8, // 
+                'max_salary' => 12,
+                'yoe' => 0,
                 'gender' => null,
                 'description' => htmlspecialchars('
                 MÔ TẢ CÔNG VIỆC
@@ -1258,13 +1258,13 @@ class JobSeeder extends Seeder
             [
                 'id' => 28,
                 'employer_id' => 22, // CUSC's employer_id
-                'jtype_id' => 1, // Assuming it's for Full-time
-                'jlevel_id' => 2, // Mid-level position
+                'jtype_id' => 1, 
+                'jlevel_id' => 2, 
                 'jname' => 'Lập Trình Viên Fullstack',
                 'address' => 'Khu II, Đại học Cần Thơ, đường 3/2, Ninh Kiều, TP. Cần Thơ',
                 'amount' => 5,
-                'min_salary' => 1200, // Lương theo tháng (1200 USD)
-                'max_salary' => 2000,
+                'min_salary' => 10, 
+                'max_salary' => 30,
                 'yoe' => 2, // Yêu cầu ít nhất 2 năm kinh nghiệm
                 'gender' => null,
                 'description' => htmlspecialchars('
@@ -1298,8 +1298,8 @@ class JobSeeder extends Seeder
                 'jname' => 'Giảng viên Công Nghệ Thông Tin',
                 'address' => 'Khu II, Đường 3/2, Ninh Kiều, TP. Cần Thơ',
                 'amount' => 2,
-                'min_salary' => 1500, // 1500 USD
-                'max_salary' => 2500,
+                'min_salary' => 15, // 1500 USD
+                'max_salary' => 25,
                 'yoe' => 5, // Yêu cầu ít nhất 5 năm kinh nghiệm
                 'gender' => null,
                 'description' => htmlspecialchars('
@@ -1332,8 +1332,8 @@ class JobSeeder extends Seeder
                 'jname' => 'Lập Trình Viên Phần Mềm',
                 'address' => '84/28, hẻm 86, Cách Mạng Tháng Tám, Phường Cái Khế, Quận Ninh Kiều, TP. Cần Thơ',
                 'amount' => 3,
-                'min_salary' => 1000, // Lương theo tháng (1000 USD)
-                'max_salary' => 1500,
+                'min_salary' => 10, // Lương theo tháng (1000 USD)
+                'max_salary' => 20,
                 'yoe' => 2, // Yêu cầu ít nhất 2 năm kinh nghiệm
                 'gender' => null,
                 'description' => htmlspecialchars('
@@ -1366,9 +1366,9 @@ class JobSeeder extends Seeder
                 'jname' => 'Điều Dưỡng Viên',
                 'address' => '300 Nguyễn Văn Cừ, Phường An Bình, Quận Ninh Kiều, TP. Cần Thơ',
                 'amount' => 10,
-                'min_salary' => 800, // Lương theo tháng (800 USD)
-                'max_salary' => 1200,
-                'yoe' => 1, // Yêu cầu ít nhất 1 năm kinh nghiệm
+                'min_salary' => 8, 
+                'max_salary' => 15,
+                'yoe' => 1,
                 'gender' => null,
                 'description' => htmlspecialchars('
                 MÔ TẢ CÔNG VIỆC
