@@ -16,6 +16,13 @@ export default function PersonalInfor() {
   const handleEdit = () => {
     setIsEdit(true);
   };
+  const handlePostToForum = () => {
+    const candidates = JSON.parse(localStorage.getItem("postedCandidates")) || [];
+    const updatedCandidates = [...candidates, personal];
+    localStorage.setItem("postedCandidates", JSON.stringify(updatedCandidates));
+    alert("Cập nhật thông tin lên diễn đàn thành công!");
+  };
+  
 
   return (
     <FrameLayout title="Thông tin cá nhân" hasaddbtn={false} className="mt-4">
@@ -38,7 +45,7 @@ export default function PersonalInfor() {
           )}
         </div>
         <div>
-          <span className="ts-sm text-secondary">Mục tiêu nghề nghiệp</span>
+          <span className="ts-sm text-secondary">Vị trí ứng tuyển</span>
           <br />
           <span className="ts-smd fw-500 whitespace-preline">
             {personal.objective || none}
@@ -104,16 +111,24 @@ export default function PersonalInfor() {
           </div>
         </div>
       </div>
-      <div className="clearfix">
-        <Button
-          variant="outline-primary"
-          size="sm"
-          className="me-3 float-md-end"
-          onClick={handleEdit}
-        >
-          Cập nhật
-        </Button>
-      </div>
+      <div className="d-flex justify-content-end gap-2">
+      <Button
+        variant="outline-primary"
+        size="sm"
+        onClick={handleEdit}
+      >
+        Cập nhật
+      </Button>
+      <Button
+        variant="outline-success"
+        size="sm"
+        onClick={() => handlePostToForum()}
+      >
+        Cập nhật lên diễn đàn
+      </Button>
+    </div>
+
+
       {isEdit && (
         <PersonalInforFormDialog
           isEdit={isEdit}

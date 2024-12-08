@@ -265,7 +265,7 @@ export default function PersonalInforFormDialog({
             </Form.Group>
           </div>
           <Form.Group className="mt-2">
-            <Form.Label className="fw-600">Mục tiêu nghề nghiệp</Form.Label>
+            <Form.Label className="fw-600">Vị trí ứng tuyển</Form.Label>
             <Form.Control
               as={"textarea"}
               rows={5}

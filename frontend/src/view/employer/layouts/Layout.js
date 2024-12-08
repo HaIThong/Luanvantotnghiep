@@ -37,6 +37,8 @@ function Layout(props) {
     nav(url);
     setCurrentPage(url);
   };
+ 
+  
 
   useEffect(() => {
     if (!localStorage.getItem("employer_jwt")) {
@@ -101,8 +103,19 @@ function Layout(props) {
             )}
             onClick={() => handleChangePage("/employer/candidates")}
           >
-            <BsFillPeopleFill className="fs-5 me-1" /> Ứng viên
+            <BsFillPeopleFill className="fs-5 me-1" /> Hồ sơ ứng viên
           </div>
+          <div
+            className={clsx(
+              "d-flex align-items-center ps-lg-5 py-lg-2 px-2 pointer hover-bgt-light",
+              currentPage === "/employer/candidate-board" && "bg-mlight text-main"
+            )}
+            onClick={() => handleChangePage("/employer/candidate-board")}
+          >
+            <BsFillPeopleFill className="fs-5 me-1" /> Tìm kiếm ứng viên
+          </div>
+          
+
           
         </div>
 

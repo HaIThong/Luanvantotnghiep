@@ -1,0 +1,44 @@
+.candidate-detail {
+    padding: 20px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .detail-container {
+    display: flex;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+  }
+  
+  .candidate-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .candidate-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .candidate-info h4 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #007bff;
+  }
+  
+  .candidate-info p {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #333;
+  }
+  

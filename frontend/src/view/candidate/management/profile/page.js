@@ -48,7 +48,7 @@ export default function Profile() {
         <Prize />
         <Activity />
       </div>
-
+      
       <div className="job-suggestions">
         <h2 className="suggestions-title">Công việc gợi ý cho bạn</h2>
         <div className="job-list">

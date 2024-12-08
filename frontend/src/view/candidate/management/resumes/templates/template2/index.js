@@ -610,11 +610,11 @@ export default function Template2({
         <InputReadOnly
           textClass="text-red"
           innerClassName={clsx('title', bgColor)}
-          placeholder="Mục tiêu nghề nghiệp"
+          placeholder="Vị trí ứng tuyển"
           defaultValue={
             cvMode === 'EDIT'
               ? basicInfor.objectiveTitle
-              : 'Mục tiêu nghề nghiệp'
+              : 'Vị trí ứng tuyển'
           }
           {...register('objectiveTitle')}
         />

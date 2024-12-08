@@ -3,7 +3,6 @@ import Table from "react-bootstrap/Table";
 import Button from "react-bootstrap/Button";
 import resumeApi from "../../../../api/resume";
 import dayjs from "dayjs";
-import { BsEyeFill } from "react-icons/bs";
 import { MdDelete } from "react-icons/md";
 import { MdEdit } from "react-icons/md";
 import { IoMdAdd } from "react-icons/io";
@@ -41,6 +40,28 @@ export default function Resume() {
       }
     }
   };
+  const handleViewCv = (pdfContent) => {
+    const pdfWindow = window.open();
+    pdfWindow.document.write(
+      `<iframe width="100%" height="100%" src="${pdfContent}" frameborder="0"></iframe>`
+    );
+  };
+  const getLocalResumes = () => {
+    const savedCvs = JSON.parse(localStorage.getItem("savedCvs")) || [];
+    return savedCvs.map((cv) => ({
+      id: cv.id,
+      title: cv.title,
+      created_at: cv.createdAt,
+      updated_at: cv.createdAt, // Tạm thời gán thời gian tạo
+      pdfContent: cv.pdfContent, // Nội dung PDF
+    }));
+  };
+  
+  useEffect(() => {
+    const localResumes = getLocalResumes();
+    setResumes(localResumes);
+  }, []);
+  
 
   useEffect(() => {
     getResumes();
@@ -82,7 +103,7 @@ export default function Resume() {
                   </td>
                   <td className="ts-lg">
                     <div className="d-flex gap-3">
-                      <BsEyeFill className="text-secondary pointer" />
+                      
                       <MdEdit
                         className="text-primary pointer"
                         onClick={() => handleEdit(item.id)}

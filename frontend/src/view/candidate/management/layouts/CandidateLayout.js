@@ -208,6 +208,11 @@ function CandidateLayout(props) {
           > <AiOutlineSave className="menu-icon" />
             Việc làm đã lưu
           </div>
+          <div className="d-flex align-items-center ps-lg-5 py-lg-2 px-2 pointer hover-bgt-light"
+              onClick={() => handleChangePage('/candidate/messages')}
+          ><AiFillHome className="menu-icon" />
+             Tin nhắn
+          </div>
         </div>
         <div className="content-part">{props.children}</div>
       </div>

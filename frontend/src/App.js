@@ -22,6 +22,10 @@ import NewLayout from "./view/NewLayout";
 import Dashboard from "./view/candidate/management/Dashboard/Dashboard";
 import Blog from "./view/candidate/management/Blog/Blog";
 import EmployerRegister from "./view/employer/auth/Signup";
+import CandidateBoard from "./view/employer/CandidateBoard/CandidateBoard";
+
+import Messages from "./view/candidate/management/CandidateMessages/message";
+
 
 export const AppContext = createContext();
 
@@ -50,6 +54,8 @@ function App() {
                   <Route path="resumes/:id" element={<Template />} />
                   <Route path="dashboard" element={<Dashboard />} />
                   <Route path="blog" element={<Blog />} />
+                  <Route path="messages" element={<Messages />} />
+
                 </Routes>
               </CandidateLayout>
             }
@@ -63,6 +69,9 @@ function App() {
                 <Routes>
                   <Route path="candidates" element={<CandidateList />} />
                   <Route path="jobs" element={<JobManagement />} />
+                  <Route path="candidate-board" element={<CandidateBoard />} />
+                
+                  
                 </Routes>
               </EmployerLayout>
             }
